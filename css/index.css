@@ -147,6 +147,11 @@
 .swiper-container-horizontal .swiper-pagination-bullets {
   bottom: -2px;
 }
+@media screen and (min-width: 414px) {
+  .all footer div {
+    left: 54%;
+  }
+}
 @media screen and (min-width: 576px) {
   .all {
     display: none;
@@ -233,23 +238,30 @@
   margin: 0 auto;
 }
 .dall .dpart2 .dappanddownload .imgwrapper .text1 {
-  width: 300px;
+  width: 258px;
   font-size: 16px;
   line-height: 21px;
   color: rgba(255, 255, 255, 0.6);
+  margin-left: 21px;
   margin-top: 10px;
+  margin-right: 21px;
 }
 .dall .dpart2 .qrcode {
   margin-left: 30px;
+  width: 200px;
+}
+.dall .dpart2 .qrcode img {
+  width: 100%;
 }
 .dall .dpart2 .qrcode div {
-  width: 194px;
+  width: 200px;
 }
 .dall .dpart2 .qrcode div p {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 24px;
   text-shadow: rgba(0, 0, 0) 0px 0px 3px;
+  color: white;
 }
 .dall .teach {
   width: 80%;
@@ -261,12 +273,15 @@
 .dall .teach img {
   width: 100%;
 }
-.dall .teach p {
+.dall .teach div {
+  width: 480px;
+}
+.dall .teach div p {
   position: absolute;
   top: 7%;
   left: 50%;
   transform: translate(-50%, 50%);
-  font-size: 48px;
+  font-size: 40px;
   color: white;
   text-shadow: rgba(0, 0, 0) 0 0 5px;
 }
@@ -280,5 +295,23 @@
   100% {
     scale: 2;
     opacity: 0;
+  }
+}
+@media screen and (min-width: 576px) {
+  .dall .teach div p {
+    font-size: 22px;
+    top: 13%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .dall .teach div p {
+    font-size: 28px;
+    top: 10%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .dall .teach div p {
+    font-size: 32px;
+    top: 9%;
   }
 }
