@@ -10,6 +10,9 @@
 //   font-family: myfont;
 //   src: url(../fonts/Roboto-Regular.ttf);
 // }
+.dall {
+  display: none;
+}
 
 .all {
   // 手機板寬度
@@ -42,6 +45,7 @@
     position: relative;
     // background-color: rgba(0,0,0,.5);
     background-image: url(../image/Phone/Banner.png);
+    background-size: cover;
   }
 
   .part1 {
@@ -178,8 +182,6 @@
   background-color: transparent;
 
   img {
-    //
-    // height: 7.2rem;
     width: 80%;
   }
 }
@@ -193,14 +195,169 @@
   .all {
     display: none;
   }
+
+  .dall {
+    display: block;
+  }
 }
 
-
 .dall {
+  width: 100%;
+  background-image: url(../image/Web/back.png);
+  background-size: cover;
+
   .dheader {
     img {
       position: relative;
       top: -1px;
+      width: 100%;
     }
+  }
+
+  .sc2-wrapper {
+    background-image: url(../image/Web/Banner.png);
+
+    .sc2 {
+      width: 30%;
+      width: 80%;
+      margin: 0 auto;
+
+      .ss {
+        width: 100%;
+
+        img {
+          width: 80%;
+          display: block;
+          margin: 0 auto;
+        }
+      }
+
+      .swiper-button-next,
+      .swiper-button-prev {
+        color: white;
+        right: 0;
+      }
+    }
+
+    .dlogo {
+      width: 50%;
+      margin: 0 auto;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .dpart2 {
+    position: relative;
+    overflow: hidden;
+
+    .dpart2img {
+      width: 100%;
+      background-size: contain;
+      animation: scale 40s ease-in-out infinite;
+      position: absolute;
+    }
+
+    .textimg {
+      width: 80%;
+      margin: 0 auto;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .dappanddownload {
+      display: flex;
+      justify-content: center;
+
+      .imgwrapper {
+        .img1 {
+          width: 300px;
+
+          img {
+            margin-top: -20px;
+            margin-bottom: -20px;
+            width: 100%;
+          }
+        }
+
+        .img2 {
+          width: 300px;
+
+          img {
+            width: 86%;
+            display: block;
+            margin: 0 auto;
+          }
+
+        }
+
+        .text1 {
+          width: 300px;
+          font-size: 16px;
+          line-height: 21px;
+          color: rgba(255, 255, 255, .6);
+          margin-top: 10px;
+        }
+      }
+    }
+
+    .qrcode {
+      margin-left: 30px;
+
+      div {
+        width: 194px;
+
+        p {
+          font-weight: bold;
+          font-size: 20px;
+          line-height: 24px;
+          text-shadow: rgba(0, 0, 0) 0px 0px 3px;
+        }
+      }
+    }
+  }
+
+
+  .teach {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    position: relative;
+
+    img {
+      width: 100%;
+    }
+
+    p {
+      position: absolute;
+      top: 7%;
+      left: 50%;
+      transform: translate(-50%, 50%);
+      font-size: 48px;
+      color: white;
+      text-shadow: rgba(0, 0, 0) 0 0 5px;
+    }
+  }
+
+
+}
+
+@keyframes scale {
+  0% {
+    scale: .01;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  100% {
+    scale: 2;
+    opacity: 0;
   }
 }

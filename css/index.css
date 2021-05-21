@@ -4,6 +4,9 @@
   list-style: none;
   font-family: 'Roboto', sans-serif;
 }
+.dall {
+  display: none;
+}
 .all {
   width: 100%;
   margin: 0 auto;
@@ -28,6 +31,7 @@
 .all .sc {
   position: relative;
   background-image: url(../image/Phone/Banner.png);
+  background-size: cover;
 }
 .all .part1 {
   width: 100%;
@@ -144,8 +148,132 @@
   .all {
     display: none;
   }
+  .dall {
+    display: block;
+  }
+}
+.dall {
+  width: 100%;
+  background-image: url(../image/Web/back.png);
+  background-size: cover;
 }
 .dall .dheader img {
   position: relative;
   top: -1px;
+  width: 100%;
+}
+.dall .sc2-wrapper {
+  background-image: url(../image/Web/Banner.png);
+}
+.dall .sc2-wrapper .sc2 {
+  width: 30%;
+  width: 80%;
+  margin: 0 auto;
+}
+.dall .sc2-wrapper .sc2 .ss {
+  width: 100%;
+}
+.dall .sc2-wrapper .sc2 .ss img {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+.dall .sc2-wrapper .sc2 .swiper-button-next,
+.dall .sc2-wrapper .sc2 .swiper-button-prev {
+  color: white;
+  right: 0;
+}
+.dall .sc2-wrapper .dlogo {
+  width: 50%;
+  margin: 0 auto;
+}
+.dall .sc2-wrapper .dlogo img {
+  width: 100%;
+}
+.dall .dpart2 {
+  position: relative;
+  overflow: hidden;
+}
+.dall .dpart2 .dpart2img {
+  width: 100%;
+  background-size: contain;
+  animation: scale 40s ease-in-out infinite;
+  position: absolute;
+}
+.dall .dpart2 .textimg {
+  width: 80%;
+  margin: 0 auto;
+}
+.dall .dpart2 .textimg img {
+  width: 100%;
+}
+.dall .dpart2 .dappanddownload {
+  display: flex;
+  justify-content: center;
+}
+.dall .dpart2 .dappanddownload .imgwrapper .img1 {
+  width: 300px;
+}
+.dall .dpart2 .dappanddownload .imgwrapper .img1 img {
+  margin-top: -20px;
+  margin-bottom: -20px;
+  width: 100%;
+}
+.dall .dpart2 .dappanddownload .imgwrapper .img2 {
+  width: 300px;
+}
+.dall .dpart2 .dappanddownload .imgwrapper .img2 img {
+  width: 86%;
+  display: block;
+  margin: 0 auto;
+}
+.dall .dpart2 .dappanddownload .imgwrapper .text1 {
+  width: 300px;
+  font-size: 16px;
+  line-height: 21px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 10px;
+}
+.dall .dpart2 .qrcode {
+  margin-left: 30px;
+}
+.dall .dpart2 .qrcode div {
+  width: 194px;
+}
+.dall .dpart2 .qrcode div p {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  text-shadow: rgba(0, 0, 0) 0px 0px 3px;
+}
+.dall .teach {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  position: relative;
+}
+.dall .teach img {
+  width: 100%;
+}
+.dall .teach p {
+  position: absolute;
+  top: 7%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  font-size: 48px;
+  color: white;
+  text-shadow: rgba(0, 0, 0) 0 0 5px;
+}
+@keyframes scale {
+  0% {
+    scale: 0.01;
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    scale: 2;
+    opacity: 0;
+  }
 }

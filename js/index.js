@@ -37,3 +37,26 @@ for (i = 0; i < swiper.pagination.bullets.length; i++) {
         this.click();
     };
 }
+
+var myswiper = new Swiper('.ss', {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    grabCursor: true,
+    clickable: true,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false
+    },
+    // pagination 的style
+
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        // bulletClass: 'my-bullet',
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
