@@ -102,10 +102,13 @@
   width: 110%;
   margin-left: -3%;
 }
-.all footer p {
+.all footer div {
+  width: 80%;
+  height: 20px;
   position: absolute;
   top: 7%;
-  left: 20%;
+  left: 50%;
+  transform: translate(-35%, -50%);
   font-size: 21px;
   color: #fff;
   text-shadow: rgba(0, 0, 0) 0 0 5px;
@@ -193,12 +196,14 @@
 .dall .dpart2 {
   position: relative;
   overflow: hidden;
+  z-index: 3;
 }
 .dall .dpart2 .dpart2img {
   width: 100%;
   background-size: contain;
   animation: scale 40s ease-in-out infinite;
   position: absolute;
+  z-index: -1;
 }
 .dall .dpart2 .textimg {
   width: 80%;

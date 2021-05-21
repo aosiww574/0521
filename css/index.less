@@ -141,13 +141,28 @@
       margin-left: -3%;
     }
 
-    p {
+    div {
+      width: 80%;
+      height: 20px;
       position: absolute;
       top: 7%;
-      left: 20%;
+      // left: 24%;
+      left: 50%;
+      transform: translate(-35%, -50%);
       font-size: 21px;
       color: #fff;
       text-shadow: rgba(0, 0, 0)0 0 5px;
+
+      p {
+        // position: absolute;
+        // top: 7%;
+        // // left: 24%;
+        // left: 50%;
+        // transform: translate(-50%, -50%);
+        // font-size: 21px;
+        // color: #fff;
+        // text-shadow: rgba(0, 0, 0)0 0 5px;
+      }
     }
   }
 }
@@ -252,12 +267,14 @@
   .dpart2 {
     position: relative;
     overflow: hidden;
+    z-index: 3;
 
     .dpart2img {
       width: 100%;
       background-size: contain;
       animation: scale 40s ease-in-out infinite;
       position: absolute;
+      z-index: -1;
     }
 
     .textimg {
