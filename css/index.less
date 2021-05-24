@@ -2,14 +2,9 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  // font-family: myfont, 'Roboto', sans-serif;
   font-family: 'Roboto', sans-serif;
 }
 
-// @font-face {
-//   font-family: myfont;
-//   src: url(../fonts/Roboto-Regular.ttf);
-// }
 .dall {
   display: none;
 }
@@ -41,9 +36,7 @@
   }
 
   .sc {
-    // margin-top: 10px;
     position: relative;
-    // background-color: rgba(0,0,0,.5);
     background-image: url(../image/Phone/Banner.png);
     background-size: cover;
   }
@@ -63,6 +56,16 @@
     z-index: 1;
     overflow: hidden;
 
+    .p2text {
+      width: 80%;
+      font-size: 1.2rem;
+      color: white;
+      text-shadow: black 0 0 5px;
+      margin: 0 auto;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
     img {
       display: block;
       width: 100%;
@@ -78,8 +81,6 @@
 
 
     .download {
-
-      // overflow: hidden;
       img {
         margin: 0 auto;
         margin-top: -20px;
@@ -146,7 +147,6 @@
       height: 20px;
       position: absolute;
       top: 7%;
-      // left: 24%;
       left: 50%;
       transform: translate(-35%, -50%);
       font-size: 21px;
@@ -200,9 +200,9 @@
 
 
 @media screen and (min-width:414px) {
-  .all{
-    footer{
-      div{
+  .all {
+    footer {
+      div {
         left: 54%;
       }
     }
@@ -283,6 +283,18 @@
     .textimg {
       width: 80%;
       margin: 0 auto;
+
+      p {
+        position: relative;
+        transform: translate(-50%, 0);
+        left: 53%;
+        font-size: 2rem;
+        white-space: nowrap;
+        color: white;
+        text-shadow: black 0 0 5px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
 
       img {
         width: 100%;
@@ -397,6 +409,13 @@
 
 @media screen and (min-width:576px) {
   .dall {
+    .dpart2 {
+      .textimg p {
+        left: 60%;
+        font-size: 1rem;
+      }
+    }
+
     .teach {
       div {
         p {
@@ -410,6 +429,14 @@
 
 @media screen and (min-width:768px) {
   .dall {
+    .dpart2 {
+      .textimg p {
+        left: 50%;
+        font-size: 1.5rem;
+        // font-size: 34px;
+      }
+    }
+
     .teach {
       div {
         p {
@@ -423,6 +450,57 @@
 
 @media screen and (min-width:992px) {
   .dall {
+    .dpart2 {
+      .textimg p {
+        left: 58%;
+        font-size: 1.5rem;
+        // font-size: 34px;
+      }
+    }
+
+    .teach {
+      div {
+        p {
+          font-size: 32px;
+          top: 9%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .dall {
+    .dpart2 {
+      .textimg p {
+        left: 58%;
+        font-size: 2rem;
+        // font-size: 34px;
+      }
+    }
+
+    .teach {
+      div {
+        p {
+          font-size: 32px;
+          top: 9%;
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width:1440px) {
+  .dall {
+    .dpart2 {
+      .textimg p {
+        left: 58%;
+        font-size: 2.6rem;
+        // font-size: 48px;
+      }
+    }
+
     .teach {
       div {
         p {
